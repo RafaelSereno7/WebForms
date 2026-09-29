@@ -70,6 +70,7 @@ namespace WebFormsProjeto1
             catch (Exception ex)
             {
                 lblMensagem.Text = "Erro ao cadastrar: " + ex.Message;
+                // opcional: logar ex.StackTrace em arquivo/telemetria
             }
         }
     }

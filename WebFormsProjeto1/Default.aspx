@@ -31,7 +31,7 @@
 
         <div class="form-group">
             <label>Telefone:</label>
-            <asp:TextBox ID="txtTelefone" runat="server" CssClass="form-control"></asp:TextBox>
+            <asp:TextBox ID="txtTelefone" runat="server" CssClass="form-control" MaxLength="11" oniput="formatarTelefone(this)"></asp:TextBox>
         </div>
 
         <br />
@@ -41,6 +41,17 @@
             Text="Cadastrar"
             CssClass="btn btn-primary"
             OnClick="btnCadastrar_Click" />
+
+        &nbsp;
+
+
+        <asp:HyperLink
+            ID="lnkAdmin"
+            runat="server"
+            NavigateUrl="~/Admin.aspx"
+            CssClass="btn btn-secondary">
+            Administração
+        </asp:HyperLink>
 
         <br />
         <br />
